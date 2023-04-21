@@ -20,23 +20,26 @@ The following libraries are used in the code:
 - os, etc.
 
 Install Python IDE (Recommendation anaconda(package) which has Jupyter notebooks and Spyder for Python) and following python packages
-a.	Pdfminer
-b.	Io
-c.	Camelot – See the description to install this package (needs ghostscript and tkinter)  https://pypi.org/project/camelot-py/
-d.	difflib
-e.	numpy
-f.	re
-g.	nltk
-h.	dateutil
-i.	pandas
+- Pdfminer
+- Io
+- Camelot – See the description to install this package (needs ghostscript and tkinter)  https://pypi.org/project/camelot-py/
+- difflib
+- numpy
+- re
+- nltk
+- dateutil
+- pandas
 
 ## Input Data
 
 The input data required for the code is a PDF file location. The user needs to specify the location of the PDF file, which will be used as input for the code. The input file should contain relevant information that needs to be extracted and analyzed.
 
-# other data like "parts and sub-parts name whose associated data will be searched for can be given manually under ‘manually_feeding_location_name’.
-and under ‘sub_parts_string_list’
-(Note: if not above data provided the tool will attempt to detect the location name available in the pdf file under the tables with column title ‘location’)
+- `location_finding_strings`:  The strings name that could assist in identifying associated spatial name. Example: `['equipment description','location']`
+- Other additional known information such as parts and sub-parts names whose associated data are to be searched and extracted for can be given manually under:
+	a. `manually_feeding_location_name`, and
+	b. `sub_parts_string_list`
+
+##### Note: if not above data provided the tool will attempt to detect the location name available in the pdf file under the tables with column title `location`
 
 ## Usage
 
